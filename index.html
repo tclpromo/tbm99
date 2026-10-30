@@ -1,28 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
   <title>TCL Tebus Murah Harga Spesial</title>
-  <link rel="icon" href="https:////aws-obg-image-lb-2.tcl.com/content/dam/brandsite/it-resources/common/navigation/tcl-logo.svg" type="image/x-icon">
+
+  <link
+    rel="icon"
+    href="https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/it-resources/common/navigation/tcl-logo.svg"
+    type="image/svg+xml"
+  />
+
   <style>
-    html, body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
       overflow: hidden;
       font-family: sans-serif;
     }
+
     .iframe-container {
-      position: relative;
+      position: fixed;
+      inset: 0;
       width: 100%;
-      height: 100vh;
+      height: 100vh;  /* Fallback browser lama */
+      height: 100dvh; /* Dynamic viewport untuk mobile */
+      overflow: hidden;
     }
+
     iframe {
+      display: block;
       width: 100%;
       height: 100%;
       border: none;
     }
+
     .loader {
       position: absolute;
       top: 50%;
@@ -34,15 +55,21 @@
     }
   </style>
 </head>
+
 <body>
   <div class="iframe-container">
-    <div class="loader" id="loader">Loading app...</div>
-    <iframe 
-      src="https://script.google.com/a/macros/tclindonesia.com/s/AKfycbz0bu0Dbt5CsDwgQFeKtEUk8DFI2qpdUcIh7zsJRfikAllQG_aJGU7VsuI8-bJCIP2l8g/exec" 
+
+    <div class="loader" id="loader">
+      Loading app...
+    </div>
+
+    <iframe
+      src="https://script.google.com/a/macros/tclindonesia.com/s/AKfycbz0bu0Dbt5CsDwgQFeKtEUk8DFI2qpdUcIh7zsJRfikAllQG_aJGU7VsuI8-bJCIP2l8g/exec"
       title="TCL Tebus Murah Harga Spesial"
       onload="document.getElementById('loader').style.display='none';"
       allowfullscreen>
     </iframe>
+
   </div>
 </body>
 </html>
